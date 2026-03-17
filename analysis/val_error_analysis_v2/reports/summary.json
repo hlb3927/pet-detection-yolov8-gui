@@ -1,0 +1,781 @@
+{
+  "conf_thres": 0.25,
+  "iou_thres": 0.5,
+  "focus_class": "fish",
+  "per_class": {
+    "horse": {
+      "tp": 35,
+      "fp": 19,
+      "fn": 6,
+      "precision_like": 0.6481,
+      "recall_like": 0.8537,
+      "tp_conf_mean": 0.7758,
+      "fp_conf_mean": 0.4928,
+      "fn_size_distribution": {
+        "large": 1,
+        "medium": 4,
+        "small": 1
+      },
+      "fp_size_distribution": {
+        "large": 4,
+        "medium": 11,
+        "small": 4
+      }
+    },
+    "rabbit": {
+      "tp": 23,
+      "fp": 6,
+      "fn": 4,
+      "precision_like": 0.7931,
+      "recall_like": 0.8519,
+      "tp_conf_mean": 0.8128,
+      "fp_conf_mean": 0.6368,
+      "fn_size_distribution": {
+        "large": 3,
+        "medium": 1
+      },
+      "fp_size_distribution": {
+        "large": 5,
+        "medium": 1
+      }
+    },
+    "hamster": {
+      "tp": 13,
+      "fp": 2,
+      "fn": 4,
+      "precision_like": 0.8667,
+      "recall_like": 0.7647,
+      "tp_conf_mean": 0.8432,
+      "fp_conf_mean": 0.5056,
+      "fn_size_distribution": {
+        "medium": 1,
+        "large": 3
+      },
+      "fp_size_distribution": {
+        "large": 1,
+        "medium": 1
+      }
+    },
+    "guinea pig": {
+      "tp": 13,
+      "fp": 3,
+      "fn": 1,
+      "precision_like": 0.8125,
+      "recall_like": 0.9286,
+      "tp_conf_mean": 0.7564,
+      "fp_conf_mean": 0.5019,
+      "fn_size_distribution": {
+        "large": 1
+      },
+      "fp_size_distribution": {
+        "large": 2,
+        "medium": 1
+      }
+    },
+    "lizard": {
+      "tp": 6,
+      "fp": 1,
+      "fn": 0,
+      "precision_like": 0.8571,
+      "recall_like": 1.0,
+      "tp_conf_mean": 0.8108,
+      "fp_conf_mean": 0.5342,
+      "fn_size_distribution": {},
+      "fp_size_distribution": {
+        "large": 1
+      }
+    },
+    "bird": {
+      "tp": 13,
+      "fp": 0,
+      "fn": 0,
+      "precision_like": 1.0,
+      "recall_like": 1.0,
+      "tp_conf_mean": 0.9186,
+      "fp_conf_mean": null,
+      "fn_size_distribution": {},
+      "fp_size_distribution": {}
+    },
+    "turtle": {
+      "tp": 7,
+      "fp": 0,
+      "fn": 0,
+      "precision_like": 1.0,
+      "recall_like": 1.0,
+      "tp_conf_mean": 0.9023,
+      "fp_conf_mean": null,
+      "fn_size_distribution": {},
+      "fp_size_distribution": {}
+    },
+    "dog": {
+      "tp": 15,
+      "fp": 2,
+      "fn": 4,
+      "precision_like": 0.8824,
+      "recall_like": 0.7895,
+      "tp_conf_mean": 0.7508,
+      "fp_conf_mean": 0.6689,
+      "fn_size_distribution": {
+        "large": 4
+      },
+      "fp_size_distribution": {
+        "large": 1,
+        "medium": 1
+      }
+    },
+    "cat": {
+      "tp": 13,
+      "fp": 2,
+      "fn": 0,
+      "precision_like": 0.8667,
+      "recall_like": 1.0,
+      "tp_conf_mean": 0.8431,
+      "fp_conf_mean": 0.7605,
+      "fn_size_distribution": {},
+      "fp_size_distribution": {
+        "large": 2
+      }
+    },
+    "fish": {
+      "tp": 21,
+      "fp": 7,
+      "fn": 36,
+      "precision_like": 0.75,
+      "recall_like": 0.3684,
+      "tp_conf_mean": 0.7842,
+      "fp_conf_mean": 0.4184,
+      "fn_size_distribution": {
+        "small": 35,
+        "medium": 1
+      },
+      "fp_size_distribution": {
+        "large": 1,
+        "small": 6
+      }
+    }
+  },
+  "confusion_analysis": {
+    "hamster": {
+      "rabbit": 1,
+      "guinea pig": 1
+    },
+    "dog": {
+      "hamster": 1,
+      "rabbit": 1
+    },
+    "horse": {
+      "dog": 1
+    },
+    "rabbit": {
+      "cat": 1
+    }
+  },
+  "hard_examples": {
+    "top_fn_images": [
+      {
+        "image_name": "Image_1986.jpg",
+        "num_gt": 40,
+        "num_pred": 8,
+        "num_tp": 5,
+        "num_fn": 35,
+        "num_fp": 3,
+        "focus_fn": true,
+        "focus_fn_count": 35
+      },
+      {
+        "image_name": "n02381460_6950.jpg",
+        "num_gt": 6,
+        "num_pred": 8,
+        "num_tp": 4,
+        "num_fn": 2,
+        "num_fp": 4,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "000V0GBM2JC2.jpg",
+        "num_gt": 1,
+        "num_pred": 0,
+        "num_tp": 0,
+        "num_fn": 1,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "3N1MTOGVCBWR.jpg",
+        "num_gt": 1,
+        "num_pred": 0,
+        "num_tp": 0,
+        "num_fn": 1,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "3ZYSGDVG50CA.jpg",
+        "num_gt": 3,
+        "num_pred": 2,
+        "num_tp": 2,
+        "num_fn": 1,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "9VL9TY9U7BBB.jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 0,
+        "num_fn": 1,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "dog-3.JPG",
+        "num_gt": 1,
+        "num_pred": 0,
+        "num_tp": 0,
+        "num_fn": 1,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "dog-6.JPEG",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 0,
+        "num_fn": 1,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "FFVL3XZ25ZV8.jpg",
+        "num_gt": 1,
+        "num_pred": 0,
+        "num_tp": 0,
+        "num_fn": 1,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "horse-7.jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 0,
+        "num_fn": 1,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "n02110063_1994.jpg",
+        "num_gt": 1,
+        "num_pred": 2,
+        "num_tp": 0,
+        "num_fn": 1,
+        "num_fp": 2,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "n02111889_4740.jpg",
+        "num_gt": 1,
+        "num_pred": 0,
+        "num_tp": 0,
+        "num_fn": 1,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "n02381460_2834.jpg",
+        "num_gt": 5,
+        "num_pred": 5,
+        "num_tp": 4,
+        "num_fn": 1,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "n02381460_6402.jpg",
+        "num_gt": 4,
+        "num_pred": 4,
+        "num_tp": 3,
+        "num_fn": 1,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "n02381460_6690.jpg",
+        "num_gt": 4,
+        "num_pred": 4,
+        "num_tp": 3,
+        "num_fn": 1,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "rabbit-15.jpg",
+        "num_gt": 5,
+        "num_pred": 5,
+        "num_tp": 4,
+        "num_fn": 1,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "SEQ3KSXFBI3Q.jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 0,
+        "num_fn": 1,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "stethojulis_bandanensis_11.jpg",
+        "num_gt": 2,
+        "num_pred": 1,
+        "num_tp": 1,
+        "num_fn": 1,
+        "num_fp": 0,
+        "focus_fn": true,
+        "focus_fn_count": 1
+      },
+      {
+        "image_name": "VK2YZBXUL3JF.jpg",
+        "num_gt": 1,
+        "num_pred": 2,
+        "num_tp": 0,
+        "num_fn": 1,
+        "num_fp": 2,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "X3NUBYEGBQUG.jpg",
+        "num_gt": 2,
+        "num_pred": 2,
+        "num_tp": 1,
+        "num_fn": 1,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      }
+    ],
+    "top_fp_images": [
+      {
+        "image_name": "n02381460_1758.jpg",
+        "num_gt": 4,
+        "num_pred": 10,
+        "num_tp": 4,
+        "num_fn": 0,
+        "num_fp": 6,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "n02381460_6950.jpg",
+        "num_gt": 6,
+        "num_pred": 8,
+        "num_tp": 4,
+        "num_fn": 2,
+        "num_fp": 4,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "Image_1986.jpg",
+        "num_gt": 40,
+        "num_pred": 8,
+        "num_tp": 5,
+        "num_fn": 35,
+        "num_fp": 3,
+        "focus_fn": true,
+        "focus_fn_count": 35
+      },
+      {
+        "image_name": "Image_177.jpg",
+        "num_gt": 1,
+        "num_pred": 3,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 2,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "n02110063_1994.jpg",
+        "num_gt": 1,
+        "num_pred": 2,
+        "num_tp": 0,
+        "num_fn": 1,
+        "num_fp": 2,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "n02381460_6556.jpg",
+        "num_gt": 5,
+        "num_pred": 7,
+        "num_tp": 5,
+        "num_fn": 0,
+        "num_fp": 2,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "VK2YZBXUL3JF.jpg",
+        "num_gt": 1,
+        "num_pred": 2,
+        "num_tp": 0,
+        "num_fn": 1,
+        "num_fp": 2,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "00000163_006.jpg",
+        "num_gt": 1,
+        "num_pred": 2,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "1AWDEWRT187P.jpg",
+        "num_gt": 1,
+        "num_pred": 2,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "2P0O5CB51B7V.jpg",
+        "num_gt": 2,
+        "num_pred": 3,
+        "num_tp": 2,
+        "num_fn": 0,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "9VL9TY9U7BBB.jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 0,
+        "num_fn": 1,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "diproctacanthus_xanthurus_2.jpg",
+        "num_gt": 1,
+        "num_pred": 2,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "dog-6.JPEG",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 0,
+        "num_fn": 1,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "epinephelus_ongus_7.jpg",
+        "num_gt": 1,
+        "num_pred": 2,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "horse-7.jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 0,
+        "num_fn": 1,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "Image_520.jpg",
+        "num_gt": 1,
+        "num_pred": 2,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "n02106662_18922.jpg",
+        "num_gt": 1,
+        "num_pred": 2,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "n02110806_6137.jpg",
+        "num_gt": 1,
+        "num_pred": 2,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "n02381460_1978.jpg",
+        "num_gt": 2,
+        "num_pred": 3,
+        "num_tp": 2,
+        "num_fn": 0,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "n02381460_2834.jpg",
+        "num_gt": 5,
+        "num_pred": 5,
+        "num_tp": 4,
+        "num_fn": 1,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      }
+    ],
+    "top_focus_fn_images": [
+      {
+        "image_name": "Image_1986.jpg",
+        "num_gt": 40,
+        "num_pred": 8,
+        "num_tp": 5,
+        "num_fn": 35,
+        "num_fp": 3,
+        "focus_fn": true,
+        "focus_fn_count": 35
+      },
+      {
+        "image_name": "stethojulis_bandanensis_11.jpg",
+        "num_gt": 2,
+        "num_pred": 1,
+        "num_tp": 1,
+        "num_fn": 1,
+        "num_fp": 0,
+        "focus_fn": true,
+        "focus_fn_count": 1
+      },
+      {
+        "image_name": "00000059_021.jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "00000103_026.jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "00000163_006.jpg",
+        "num_gt": 1,
+        "num_pred": 2,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "00000165_017.jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "00000365_017.jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "00000411_015.jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "00000586_024.jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "00000611_024.jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "00000836_012.jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "00001051_004.jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "000V0GBM2JC2.jpg",
+        "num_gt": 1,
+        "num_pred": 0,
+        "num_tp": 0,
+        "num_fn": 1,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "0X2R9PDM51Q3.jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "1 (16).jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "1 (18).jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "1 (21).jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "1 (6).jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "15Q542I1FOFI.jpg",
+        "num_gt": 1,
+        "num_pred": 1,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 0,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      },
+      {
+        "image_name": "1AWDEWRT187P.jpg",
+        "num_gt": 1,
+        "num_pred": 2,
+        "num_tp": 1,
+        "num_fn": 0,
+        "num_fp": 1,
+        "focus_fn": false,
+        "focus_fn_count": 0
+      }
+    ]
+  }
+}

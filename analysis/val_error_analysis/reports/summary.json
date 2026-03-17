@@ -1,0 +1,137 @@
+{
+  "conf_thres": 0.25,
+  "iou_thres": 0.5,
+  "focus_class": "fish",
+  "per_class": {
+    "horse": {
+      "tp": 35,
+      "fp": 19,
+      "fn": 6,
+      "precision_like": 0.6481,
+      "recall_like": 0.8537,
+      "fn_size_distribution": {
+        "large": 1,
+        "medium": 4,
+        "small": 1
+      },
+      "fp_size_distribution": {
+        "large": 4,
+        "medium": 11,
+        "small": 4
+      }
+    },
+    "rabbit": {
+      "tp": 23,
+      "fp": 6,
+      "fn": 4,
+      "precision_like": 0.7931,
+      "recall_like": 0.8519,
+      "fn_size_distribution": {
+        "large": 3,
+        "medium": 1
+      },
+      "fp_size_distribution": {
+        "large": 5,
+        "medium": 1
+      }
+    },
+    "hamster": {
+      "tp": 13,
+      "fp": 2,
+      "fn": 4,
+      "precision_like": 0.8667,
+      "recall_like": 0.7647,
+      "fn_size_distribution": {
+        "medium": 1,
+        "large": 3
+      },
+      "fp_size_distribution": {
+        "large": 1,
+        "medium": 1
+      }
+    },
+    "guinea pig": {
+      "tp": 13,
+      "fp": 3,
+      "fn": 1,
+      "precision_like": 0.8125,
+      "recall_like": 0.9286,
+      "fn_size_distribution": {
+        "large": 1
+      },
+      "fp_size_distribution": {
+        "large": 2,
+        "medium": 1
+      }
+    },
+    "lizard": {
+      "tp": 6,
+      "fp": 1,
+      "fn": 0,
+      "precision_like": 0.8571,
+      "recall_like": 1.0,
+      "fn_size_distribution": {},
+      "fp_size_distribution": {
+        "large": 1
+      }
+    },
+    "bird": {
+      "tp": 13,
+      "fp": 0,
+      "fn": 0,
+      "precision_like": 1.0,
+      "recall_like": 1.0,
+      "fn_size_distribution": {},
+      "fp_size_distribution": {}
+    },
+    "turtle": {
+      "tp": 7,
+      "fp": 0,
+      "fn": 0,
+      "precision_like": 1.0,
+      "recall_like": 1.0,
+      "fn_size_distribution": {},
+      "fp_size_distribution": {}
+    },
+    "dog": {
+      "tp": 15,
+      "fp": 2,
+      "fn": 4,
+      "precision_like": 0.8824,
+      "recall_like": 0.7895,
+      "fn_size_distribution": {
+        "large": 4
+      },
+      "fp_size_distribution": {
+        "large": 1,
+        "medium": 1
+      }
+    },
+    "cat": {
+      "tp": 13,
+      "fp": 2,
+      "fn": 0,
+      "precision_like": 0.8667,
+      "recall_like": 1.0,
+      "fn_size_distribution": {},
+      "fp_size_distribution": {
+        "large": 2
+      }
+    },
+    "fish": {
+      "tp": 21,
+      "fp": 7,
+      "fn": 36,
+      "precision_like": 0.75,
+      "recall_like": 0.3684,
+      "fn_size_distribution": {
+        "small": 35,
+        "medium": 1
+      },
+      "fp_size_distribution": {
+        "large": 1,
+        "small": 6
+      }
+    }
+  }
+}

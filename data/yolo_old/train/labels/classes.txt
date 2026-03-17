@@ -1,0 +1,10 @@
+horse
+rabbit
+hamster
+guinea pig
+lizard
+bird
+turtle
+dog
+cat
+fish

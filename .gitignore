@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+.env/
+
+# PyCharm
+.idea/
+
+# Data & outputs
+runs/
+outputs/
+demo_outputs/
+dist/
+build/
+
+# Weights
+*.pt
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

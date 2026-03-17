@@ -1,0 +1,125 @@
+﻿image_name,num_gt,num_pred,num_tp,num_fn,num_fp,focus_fn
+00000059_021.jpg,1,1,1,0,0,False
+00000103_026.jpg,1,1,1,0,0,False
+00000163_006.jpg,1,2,1,0,1,False
+00000165_017.jpg,1,1,1,0,0,False
+00000365_017.jpg,1,1,1,0,0,False
+00000411_015.jpg,1,1,1,0,0,False
+00000586_024.jpg,1,1,1,0,0,False
+00000611_024.jpg,1,1,1,0,0,False
+00000836_012.jpg,1,1,1,0,0,False
+00001051_004.jpg,1,1,1,0,0,False
+000V0GBM2JC2.jpg,1,0,0,1,0,False
+0X2R9PDM51Q3.jpg,1,1,1,0,0,False
+1 (16).jpg,1,1,1,0,0,False
+1 (18).jpg,1,1,1,0,0,False
+1 (21).jpg,1,1,1,0,0,False
+1 (6).jpg,1,1,1,0,0,False
+15Q542I1FOFI.jpg,1,1,1,0,0,False
+1AWDEWRT187P.jpg,1,2,1,0,1,False
+1NHJ54YSEZ3W.jpg,1,1,1,0,0,False
+2 (29).jpg,1,1,1,0,0,False
+2 (30).jpg,1,1,1,0,0,False
+2 (8).jpg,1,1,1,0,0,False
+2P0O5CB51B7V.jpg,2,3,2,0,1,False
+3 (13).jpg,1,1,1,0,0,False
+3 (3).jpg,1,1,1,0,0,False
+3MWF1BQ9DLDO.jpg,4,4,4,0,0,False
+3N1MTOGVCBWR.jpg,1,0,0,1,0,False
+3ZYSGDVG50CA.jpg,3,2,2,1,0,False
+4 (15).jpg,1,1,1,0,0,False
+4 (27).jpg,1,1,1,0,0,False
+4 (5).jpg,1,1,1,0,0,False
+4U39L85K3NFQ.jpg,1,1,1,0,0,False
+4ZEAGMVAXDJU.jpg,1,1,1,0,0,False
+5 (17).jpg,1,1,1,0,0,False
+57BP93RSP7XU.jpg,1,1,1,0,0,False
+8J8A7PWQI23D.jpg,1,1,1,0,0,False
+9JUHMNSED1DD.jpg,1,1,1,0,0,False
+9VL9TY9U7BBB.jpg,1,1,0,1,1,False
+BIP73VUMHI6S.jpg,1,1,1,0,0,False
+bodianus_diana_10.jpg,1,1,1,0,0,False
+BOV1EM1J60U2.jpg,1,1,1,0,0,False
+BXXX1BN4ILC1.jpg,1,1,1,0,0,False
+cat-17.jpg,1,1,1,0,0,False
+cat-18.jpg,1,1,1,0,0,False
+cat-4.JPG,1,1,1,0,0,False
+CICIWXV84JU6.jpg,1,1,1,0,0,False
+cirrhilabrus_punctatus_6.jpg,2,2,2,0,0,False
+diproctacanthus_xanthurus_2.jpg,1,2,1,0,1,False
+dog-14.jpg,1,1,1,0,0,False
+dog-3.JPG,1,0,0,1,0,False
+dog-6.JPEG,1,1,0,1,1,False
+dog-8.JPEG,1,1,1,0,0,False
+EMBF879KOVKV.jpg,1,1,1,0,0,False
+EPHE4Q3VWAQZ.jpg,1,1,1,0,0,False
+epinephelus_hexagonatus_3.jpg,1,1,1,0,0,False
+epinephelus_ongus_7.jpg,1,2,1,0,1,False
+EQVPVK5HHXO7.jpg,1,1,1,0,0,False
+FFVL3XZ25ZV8.jpg,1,0,0,1,0,False
+fish-10.jpg,2,2,2,0,0,False
+GRRK27EB4M9V.jpg,1,1,1,0,0,False
+guineaPig-3.jpg,1,1,1,0,0,False
+hamster-1.jpg,1,1,1,0,0,False
+horse-7.jpg,1,1,0,1,1,False
+Image_1112.jpg,1,1,1,0,0,False
+Image_1299.jpg,1,1,1,0,0,False
+Image_1723.jpg,1,1,1,0,0,False
+Image_177.jpg,1,3,1,0,2,False
+Image_1986.jpg,40,8,5,35,3,True
+Image_520.jpg,1,2,1,0,1,False
+Image_557.jpg,1,1,1,0,0,False
+JUDQI0WB9AM7.jpg,1,1,1,0,0,False
+labroides_bicolor_7.jpg,1,1,1,0,0,False
+lizard-20.jpg,1,1,1,0,0,False
+lizard-3.jpg,1,1,1,0,0,False
+lizard-9.jpg,1,1,1,0,0,False
+n02092339_1331.jpg,1,1,1,0,0,False
+n02093647_252.jpg,1,1,1,0,0,False
+n02096177_5147.jpg,1,1,1,0,0,False
+n02098413_2911.jpg,1,1,1,0,0,False
+n02102973_2453.jpg,1,1,1,0,0,False
+n02106166_2458.jpg,1,1,1,0,0,False
+n02106382_752.jpg,1,1,1,0,0,False
+n02106662_18922.jpg,1,2,1,0,1,False
+n02108089_69.jpg,1,1,1,0,0,False
+n02110063_1994.jpg,1,2,0,1,2,False
+n02110806_6137.jpg,1,2,1,0,1,False
+n02111889_4740.jpg,1,0,0,1,0,False
+n02113023_6519.jpg,1,1,1,0,0,False
+n02113712_936.jpg,2,2,2,0,0,False
+n02381460_1758.jpg,4,10,4,0,6,False
+n02381460_1978.jpg,2,3,2,0,1,False
+n02381460_2150.jpg,1,1,1,0,0,False
+n02381460_2710.jpg,1,1,1,0,0,False
+n02381460_2834.jpg,5,5,4,1,1,False
+n02381460_3299.jpg,2,3,2,0,1,False
+n02381460_4372.jpg,5,6,5,0,1,False
+n02381460_4446.jpg,1,1,1,0,0,False
+n02381460_6402.jpg,4,4,3,1,1,False
+n02381460_6556.jpg,5,7,5,0,2,False
+n02381460_6690.jpg,4,4,3,1,1,False
+n02381460_6950.jpg,6,8,4,2,4,False
+negaprion_acutidens_2.jpg,1,1,1,0,0,False
+OD33I1KCPTO1.jpg,3,4,3,0,1,False
+OP0LC2GF8G2Q.jpg,1,1,1,0,0,False
+oxycheilinus_celebicus_9.jpg,1,1,1,0,0,False
+oxymonacanthus_longirostris_6.jpg,1,1,1,0,0,False
+PDEXW2NXAI97.jpg,1,1,1,0,0,False
+PDGAID24ZTAI.jpg,2,2,2,0,0,False
+pristipomoides_filamentosus_7.jpg,1,1,1,0,0,False
+QEQINGBMTVUN.jpg,1,1,1,0,0,False
+rabbit-12.jpg,5,5,5,0,0,False
+rabbit-15.jpg,5,5,4,1,1,False
+RRA6W6POTX1V.jpg,1,1,1,0,0,False
+RVGDZAYSF6UX.jpg,1,1,1,0,0,False
+SEQ3KSXFBI3Q.jpg,1,1,0,1,1,False
+stethojulis_bandanensis_11.jpg,2,1,1,1,0,True
+stethojulis_interrupta_20.jpg,1,1,1,0,0,False
+variola_albimarginata_12.jpg,1,1,1,0,0,False
+VK2YZBXUL3JF.jpg,1,2,0,1,2,False
+W6A073U0FKMS.jpg,2,2,2,0,0,False
+X3NUBYEGBQUG.jpg,2,2,1,1,1,False
+xiphocheilus_typus_1.jpg,1,1,1,0,0,False
+ZRK7QQUIOR1X.jpg,1,1,1,0,0,False
+ZSJZWVBZOD6W.jpg,1,1,1,0,0,False

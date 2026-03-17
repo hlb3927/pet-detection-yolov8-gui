@@ -1,0 +1,7 @@
+﻿gt_class,pred_class,count
+hamster,rabbit,1
+hamster,guinea pig,1
+dog,hamster,1
+dog,rabbit,1
+horse,dog,1
+rabbit,cat,1
