@@ -55,6 +55,7 @@ horse / rabbit / hamster / guinea pig / lizard / bird / turtle / dog / cat / fis
 
 ## 🏗️ 项目结构
 
+```text
 pets_detect/
 ├── core/        # 推理模块
 ├── gui/         # GUI界面
