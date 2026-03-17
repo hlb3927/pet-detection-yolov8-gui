@@ -56,17 +56,18 @@ horse / rabbit / hamster / guinea pig / lizard / bird / turtle / dog / cat / fis
 ## 🏗️ 项目结构
 
 pets_detect/
-├── core/ # 推理模块
-├── gui/ # GUI界面
-├── analysis/ # 错误分析与数据分析
-├── tools/ # 数据处理与训练脚本
-├── config/ # 数据配置
-├── models/ # 模型权重（本地）
-├── runs/ # 训练结果
-├── outputs/ # 推理输出
-├── app/ # 程序入口
+├── core/        # 推理模块
+├── gui/         # GUI界面
+├── analysis/    # 错误分析与数据分析
+├── tools/       # 数据处理与训练脚本
+├── config/      # 数据配置
+├── models/      # 模型权重（本地）
+├── runs/        # 训练结果（不上传）
+├── outputs/     # 推理输出（不上传）
+├── app/         # 程序入口
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
