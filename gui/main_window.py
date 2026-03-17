@@ -15,6 +15,7 @@ from PyQt5.QtCore import Qt
 from core.predictor import YOLOPredictor
 from pathlib import Path
 import sys
+from core.result_exporter import export_result_to_json
 #先创造控件，再放进布局
 #使用QHBoxLayout让按钮并排
 #使用QVBoxLayout让界面从上到下
@@ -34,12 +35,16 @@ class DemoWindow(QWidget):
         self.save_dir = Path("demo_outputs")
         self.conf=0.25
         self.save_dir.mkdir(parents=True, exist_ok=True)
-        self.predictor =None                                 #YOLOPredictor(self.weights_path)
+        self.predictor =None
+        self.last_result = None
+        #YOLOPredictor(self.weights_path)
 #创建控件
         self.title_label = QLabel("Pet Detection Local Demo")
 
         self.select_btn=QPushButton("选择图片")                 #QPushButton创建按钮
         self.detect_btn=QPushButton("开始检测")
+        self.export_btn = QPushButton("导出结果")
+
 
         self.image_label=QLabel("待显示图片")                    #QLabel图片显示区域
         self.image_label.setMinimumSize(800,450)                #setMiniumSize空间最小尺寸
@@ -49,20 +54,24 @@ class DemoWindow(QWidget):
         self.result_text=QTextEdit()                           #QTextEdit()结果文本区
         self.result_text.setReadOnly(True)                     #setReadOnly只读
         self.result_text.setPlainText("检测结果将在这里显示")
+
 #事件连接
         self.select_btn.clicked.connect(self.select_image)      #clicked按钮被点击事件，connect()把事件连接到某个函数
         self.detect_btn.clicked.connect(self.detect_image)
+        self.export_btn.clicked.connect(self.export_result)
 
 #创建布局
         button_layout = QHBoxLayout()                           #QHBoxLayout水平布局
         button_layout.addWidget(self.select_btn)
         button_layout.addWidget(self.detect_btn)
+        button_layout.addWidget(self.export_btn)
 
         main_layout = QVBoxLayout()                             #QVBoxLayo垂直水平布局
         main_layout.addWidget(self.title_label)
         main_layout.addLayout(button_layout)
         main_layout.addWidget(self.image_label)
         main_layout.addWidget(self.result_text)
+
 #主布局
         self.setLayout(main_layout)
 
@@ -153,6 +162,7 @@ class DemoWindow(QWidget):
             lines.append(f"图片: {result_info.get('image_name', '')}")
             lines.append(f"检测框数量: {result_info.get('num_dets', 0)}")
             lines.append(f"推理耗时: {result_info.get('elapsed_time', 'unknown')} s")
+            lines.append(f"推理设备: {result_info.get('device', 'unknown')}")
             lines.append("")
 
             if result_info.get("num_dets", 0) == 0:
@@ -165,7 +175,25 @@ class DemoWindow(QWidget):
                     lines.append("")
 
             self.result_text.setPlainText("\n".join(lines))
+            self.last_result = result_info
 
         except Exception as e:
             QMessageBox.critical(self, "程序异常", str(e))
 
+
+    def export_result(self):
+        if self.last_result is None:
+            QMessageBox.information(self, "提示", "请先进行检测")
+            return
+
+        try:
+            json_path = export_result_to_json(self.last_result)
+
+            QMessageBox.information(
+                self,
+                "导出成功",
+                f"结果已保存：\n{json_path}"
+            )
+
+        except Exception as e:
+            QMessageBox.critical(self, "导出失败", str(e))

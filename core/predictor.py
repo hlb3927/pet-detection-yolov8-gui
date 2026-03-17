@@ -1,14 +1,19 @@
 import time
-
+import torch
 from ultralytics import YOLO
 import cv2
 
 
 class YOLOPredictor:
-    def __init__(self,weights):
+    def __init__(self,weights,device=None):
         print(f"加载模型...")
         self.model=YOLO(str(weights))
-        print(f"模型加载完成")
+        if device is None:
+            self.device = 0 if torch.cuda.is_available() else "cpu"
+        else:
+            self.device = device
+
+        print(f"模型加载完成，当前设备: {self.device}")
 
     def predict_image(self,img_path,save_dir,conf):      #单张预测，主要预测
         save_dir.mkdir(parents=True, exist_ok=True)
@@ -20,7 +25,7 @@ class YOLOPredictor:
         if img is None:
             raise ValueError("图片读取失败")
 
-        result=self.model(img,conf=conf)
+        result=self.model(img,conf=conf,device=self.device)
         result=result[0]
 
         num_dets=len(result.boxes)
@@ -60,6 +65,8 @@ class YOLOPredictor:
             "image_name":img_path.name,
             "save_path":str(save_path),
             "num_dets":num_dets,
+            "elapsed_time":round(elapsed,3),
+            "device":str(self.device),
             "detections":detections
         }
 
